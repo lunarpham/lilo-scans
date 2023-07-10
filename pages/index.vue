@@ -53,7 +53,11 @@
       </section>
       <section id="all-mangas" class="pt-5">
           <div class="container">
-              <h5 class="fw-bold">TẤT CẢ MANGA</h5>
+                <h5 class="fw-bold">TẤT CẢ MANGA</h5>
+                <ul v-for="manga in mangas">
+                    <img :src="manga.img" :alt="manga.id" style="width: 10rem;">
+                    <NuxtLink :to="`manga/${manga.id}`">{{ manga.title }}</NuxtLink>
+                </ul>
           </div>
       </section>
     </div>
@@ -87,5 +91,8 @@
             }
         ]
     })
-  </script>
+
+    const { data: mangas } = await useFetch('https://api.npoint.io/5db90e7f047a1396a59c/manga');
+
+</script>
   
