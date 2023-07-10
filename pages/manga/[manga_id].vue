@@ -1,5 +1,8 @@
 <template>
     <div> 
+        <Head>
+            <title>{{ manga.title }} - Lilo Translation</title>
+        </Head>
         <section
             id="manga-header"
             :style="{
@@ -111,9 +114,12 @@
     }          
 </script>
 <script setup>
+
     const route = useRoute();
-    useHead({
-        title: route.params.title,
+    const { data: manga } = await useFetch('https://api.npoint.io/5db90e7f047a1396a59c/manga/' + route.params.manga_id);
+
+    useHead(() => {
+        return {
         meta: [
             {
             hid: 'description',
@@ -128,16 +134,14 @@
             href: '/lilo.webp'
             }
         ],
-
         script: [
             {
             src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js',
             ssr: true
             }
         ]
-    })
-
-    const { data: manga } = await useFetch('https://api.npoint.io/5db90e7f047a1396a59c/manga/' + route.params.title);
+        };
+    });
   
 </script>
 <style>
