@@ -7,40 +7,39 @@
 
 
 /*Style for body/html*/
-html, body {
-    overflow-x: hidden; /*Do not show if contents are overflow horizontally*/
+html,
+body {
+    overflow-x: hidden;
+    /*Do not show if contents are overflow horizontally*/
     scroll-margin: 0;
 }
 
 html {
-  scroll-padding-top: calc(4.5rem - 1px);
+    scroll-padding-top: calc(4.5rem - 1px);
 }
 
 /*Background*/
 body {
-  background-color:#FAF8F8;
-  letter-spacing: 0.01em;
-  font-family: "Plus Jakarta Sans", "Outfit";
-  color: #5c5c5c;
-  margin: 0;
-  padding: 0;
+    background-color: #FAF8F8;
+    letter-spacing: 0.01em;
+    font-family: "Plus Jakarta Sans", "Outfit";
+    color: #5c5c5c;
+    margin: 0;
+    padding: 0;
 }
 
 
-::-webkit-scrollbar-track
-{
-	background-color: #ffffff;
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
 }
 
-::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: #ffffff;
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ffffff;
 }
 
-::-webkit-scrollbar-thumb
-{
-	background-color: #D08585;
+::-webkit-scrollbar-thumb {
+    background-color: #D08585;
 }
 
 .active {
@@ -48,7 +47,7 @@ body {
 }
 
 .navbar-brand {
-    color:#D08585
+    color: #D08585
 }
 
 .nav-link {
@@ -107,12 +106,13 @@ footer .container-fluid {
 
 .title-box {
     position: relative;
-    top:-15rem;
+    top: -15rem;
     align-items: center;
-    height:initial
+    height: initial
 }
 
-.manga-title, .manga-alias {
+.manga-title,
+.manga-alias {
     position: relative;
     top: -2rem;
     color: white;
@@ -125,7 +125,7 @@ footer .container-fluid {
 .info-box {
     background-color: white;
     height: 28.5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .summary-wrapper {
@@ -150,7 +150,7 @@ footer .container-fluid {
 
 
 .tag {
-    font-weight:500;
+    font-weight: 500;
     background-color: #D08585;
     color: white;
     padding: 0.2rem 0.5rem;
@@ -160,15 +160,15 @@ footer .container-fluid {
 }
 
 .status-on {
-    color:#637E5C;
+    color: #637E5C;
 }
 
 .status-pause {
-    color:#cc6161;
+    color: #cc6161;
 }
 
 .status-done {
-    color:#4662af;
+    color: #4662af;
 }
 
 .manga-cover {
@@ -185,29 +185,34 @@ footer .container-fluid {
 }
 
 .line-bottom {
-display: inline-block;
-position: relative;
+    display: inline-block;
+    position: relative;
 }
 
 .line-bottom::after {
-content: '';
-position: absolute;
-width: 100%;
-transform: scaleX(0);
-height: 3px;
-bottom: -2px;
-left: 0;
-background-color: #D08585;
-transform-origin: bottom right;
-transition: transform 0.35s ease-out;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: #D08585;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
 }
 
 .line-bottom:hover::after {
-transform: scaleX(1);
-transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
-@media screen and (min-width: 1400px){
+.text-under-comic a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (min-width: 1400px) {
     .link-list {
         transform: translateY(-9.5rem);
     }
@@ -216,17 +221,16 @@ transform-origin: bottom left;
 @media screen and (min-width: 1201px) and (max-width: 1399px) {
     .link-list {
         transform: translateY(-5rem);
-    }    
+    }
 }
 
-@media screen and (min-width: 1201px){
+@media screen and (min-width: 1201px) {
     .summary-text {
         max-height: 8rem;
         overflow-y: scroll;
     }
 
-    .summary-text::-webkit-scrollbar
-    {
+    .summary-text::-webkit-scrollbar {
         width: 1px;
         background-color: #ffffff;
     }
@@ -261,12 +265,13 @@ transform-origin: bottom left;
         background-color: transparent;
     }
 
-    .manga-title, .manga-alias {
-        color:#5c5c5c ;
+    .manga-title,
+    .manga-alias {
+        color: #5c5c5c;
     }
 
     .title-box {
-        top:-10rem;
+        top: -10rem;
     }
 
     .manga-cover {
@@ -278,4 +283,3 @@ transform-origin: bottom left;
     }
 
 }
-

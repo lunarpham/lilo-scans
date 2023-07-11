@@ -55,9 +55,9 @@
             <div class="container">
                 <h5 class="fw-bold">TẤT CẢ MANGA</h5>
                 <div class="row container">
-                    <div class="col-6 p-2" v-for="manga in mangas">
-                        <img :src="manga.img" :alt="manga.id" style="width: 12rem;">
-                        <div>
+                    <div class="col-6 col-md-3 col-xl-4 p-2" v-for="manga in mangas">
+                        <img :src="manga.img" :alt="manga.id" style="width: 95%;">
+                        <div class="text-under-comic fw-bold">
                             <NuxtLink :to="`manga/${manga.id}`">{{ manga.title }}</NuxtLink>
                         </div>
                     </div>
