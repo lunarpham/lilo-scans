@@ -50,10 +50,15 @@
       <section id="all-mangas" class="pt-5">
           <div class="container">
                 <h5 class="fw-bold">TẤT CẢ MANGA</h5>
-                <ul v-for="manga in mangas">
-                    <img :src="manga.img" :alt="manga.id" style="width: 10rem;">
-                    <NuxtLink :to="`manga/${manga.id}`">{{ manga.title }}</NuxtLink>
-                </ul>
+                <div class="row container">
+                    <div class="col-6 p-2" v-for="manga in mangas">   
+                            <img :src="manga.img" :alt="manga.id" style="width: 12rem;">
+                            <div>
+                                <NuxtLink :to="`manga/${manga.id}`">{{ manga.title }}</NuxtLink>
+                            </div>
+                    </div>
+
+                </div>
           </div>
       </section>
     </div>
