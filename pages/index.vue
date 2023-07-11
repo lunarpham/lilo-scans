@@ -9,8 +9,7 @@
               <h5 class="fw-bold">MỚI CẬP NHẬT</h5>
               <ul class="new-updates p-0">
                   <li class="update-content my-3">
-                      <a href="#" class="container bg-white shadow-sm p-0 d-flex link-underline link-underline-opacity-0 link-secondary">
-                          <div class="start-block"></div>
+                      <a href="#" class="border-left-pink rounded container bg-white shadow-sm p-0 d-flex link-underline link-underline-opacity-0 link-secondary">
                           <div class="update-body w-100 py-2 px-lg-5 row">
                               <div class="col-md-8">Anh Tiến Phiêu Lưu Ký</div>
                               <div class="col-md-1">Chương 5</div>
@@ -19,8 +18,7 @@
                       </a>
                   </li>
                   <li class="update-content my-3">
-                      <a href="#" class="container bg-white shadow-sm p-0 d-flex link-underline link-underline-opacity-0 link-secondary">
-                          <div class="start-block"></div>
+                      <a href="#" class="border-left-pink rounded container bg-white shadow-sm p-0 d-flex link-underline link-underline-opacity-0 link-secondary">
                           <div class="update-body w-100 py-2 px-lg-5 row">
                               <div class="col-md-8">Anh Tiến Phiêu Lưu Ký</div>
                               <div class="col-md-1">Chương 4</div>
@@ -29,8 +27,7 @@
                       </a>
                   </li>
                   <li class="update-content my-3">
-                      <a href="#" class="container bg-white shadow-sm p-0 d-flex link-underline link-underline-opacity-0 link-secondary">
-                          <div class="start-block"></div>
+                      <a href="#" class="border-left-pink rounded container bg-white shadow-sm p-0 d-flex link-underline link-underline-opacity-0 link-secondary">
                           <div class="update-body w-100 py-2 px-lg-5 row">
                               <div class="col-md-8">Anh Tiến Phiêu Lưu Ký</div>
                               <div class="col-md-1">Chương 3</div>
@@ -39,8 +36,7 @@
                       </a>
                   </li>
                   <li class="update-content my-3">
-                      <a href="#" class="container bg-white shadow-sm p-0 d-flex link-underline link-underline-opacity-0 link-secondary">
-                          <div class="start-block"></div>
+                      <a href="#" class="border-left-pink rounded container bg-white shadow-sm p-0 d-flex link-underline link-underline-opacity-0 link-secondary">
                           <div class="update-body w-100 py-2 px-lg-5 row">
                               <div class="col-md-8">Địt bà Nt*da và BLT</div>
                               <div class="col-md-1">Chương 1</div>
