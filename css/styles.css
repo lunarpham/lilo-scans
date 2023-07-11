@@ -43,6 +43,10 @@ body {
 	background-color: #D08585;
 }
 
+.full-width {
+    display: inline-block;
+  }
+
 .active {
     border-bottom: 3px solid #D08585;
 }
@@ -68,7 +72,7 @@ li {
 }
 
 .border-left-pink {
-    border-left: 3px solid #D08585;
+    border-left: 9px solid #D08585;
 }
 
 footer .container-fluid {
