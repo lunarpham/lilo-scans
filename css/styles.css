@@ -62,39 +62,21 @@ li {
     list-style: none;
 }
 
-<<<<<<< HEAD
-=======
-.active {
-    position: relative;
-    border-bottom: 3px solid #D08585;
-}
-
-.border-left {
-    position: relative;
-    border-left: 7px solid #D08585;
-}
-
->>>>>>> abb74de06f4b0a8093551c94bee50ed697b6e30f
 .start-block {
     background-color: #D08585;
     width: 5px;
 }
 
+.border-left {
+    border-left: 7px solid #D08585;
+}
+
 footer .container-fluid {
     background-color: #D08585;
     color: white;
-<<<<<<< HEAD
     margin-top: 5rem;
 }
 
-=======
-    margin-top: 100vh;
-}
-
-footer {
-    margin-top: 10rem;
-}
->>>>>>> abb74de06f4b0a8093551c94bee50ed697b6e30f
 
 /*#manga-header {
     background-size: cover;
@@ -178,7 +160,6 @@ footer {
     height: 100%;
 }
 
-<<<<<<< HEAD
 .update-body {
     padding: 0rem 5%;
 }
@@ -195,8 +176,6 @@ footer {
     }    
 }
 
-=======
->>>>>>> abb74de06f4b0a8093551c94bee50ed697b6e30f
 @media screen and (min-width: 1201px){
     .summary-text {
         max-height: 8rem;
@@ -251,12 +230,9 @@ footer {
         width: 90%;
     }
 
-<<<<<<< HEAD
     #reading-links {
         top: -15rem;
     }
 
-=======
->>>>>>> abb74de06f4b0a8093551c94bee50ed697b6e30f
 }
 
