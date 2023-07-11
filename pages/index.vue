@@ -74,9 +74,9 @@
     const { data: mangas } = await useFetch('https://api.npoint.io/5db90e7f047a1396a59c/manga');
 
     useSeoMeta({
-        title: 'Lilo Translation',
-        description: 'Biết bố mày là ai không?',
-        image: 'https://i.imgur.com/PU44ah4.jpg',
+        ogTitle: 'Lilo Translation',
+        ogDescription: 'Biết bố mày là ai không?',
+        ogImage: 'https://i.imgur.com/PU44ah4.jpg',
         url: 'https://lilo-translation.vercel.app/'
     })
 
