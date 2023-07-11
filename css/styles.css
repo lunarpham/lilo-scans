@@ -67,10 +67,6 @@ li {
     width: 5px;
 }
 
-.border-left {
-    border-left: 7px solid #D08585;
-}
-
 footer .container-fluid {
     background-color: #D08585;
     color: white;
