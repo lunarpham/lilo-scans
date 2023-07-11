@@ -51,6 +51,22 @@ body {
     color:#D08585
 }
 
+.nav-link {
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #D08585;
+}
+
+.nav-link:focus {
+    color: #D08585;
+}
+
+.nav-link:active {
+    color: #D08585;
+}
+
 #masthead {
     background-image: url('https://i.imgur.com/icvX4v4.jpg');
     height: 30rem;
@@ -104,7 +120,7 @@ footer .container-fluid {
 
 .info-box {
     background-color: white;
-    height: 28rem;
+    height: 28.5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
 }
 
@@ -160,9 +176,13 @@ footer .container-fluid {
     padding: 0rem 5%;
 }
 
+.title {
+    height: 9rem;
+}
+
 @media screen and (min-width: 1400px){
     .link-list {
-        transform: translateY(-10rem);
+        transform: translateY(-9.5rem);
     }
 }
 
@@ -187,7 +207,7 @@ footer .container-fluid {
 
 @media screen and (max-width: 1200px) {
     .info-box {
-        height: 33rem;
+        height: 35rem;
     }
 
     .summary-wrapper {
@@ -203,7 +223,7 @@ footer .container-fluid {
 
 @media screen and (max-width: 992px) {
     .info-box {
-        height: 38rem;
+        height: 35rem;
     }
 }
 

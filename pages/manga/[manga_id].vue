@@ -23,8 +23,11 @@
                             >
                         </div>
                         <div class="col-md-8 px-4 py-5 details-box">
-                            <h1 class="fw-bold manga-title">{{ manga.title }}</h1>
-                            <h4 class="fw-med manga-alias">{{ manga.alias }}</h4>
+                            <div class="title">
+                                <h1 class="fw-bold manga-title">{{ manga.title }}</h1>
+                                <h4 class="fw-med manga-alias">{{ manga.alias }}</h4>
+                            </div>
+
                             <div class="row">
                                 <div class="col-md-5 d-flex flex-column align-items-start">
                                     <p class="mb-0">Tác giả</p>
@@ -128,32 +131,8 @@
     useHead(() => {
         return {
         title: `${ manga._value.title }`,
-        meta: [
-            {
-            hid: 'description',
-            name: 'description',
-            content: 'Lilo Translation'
-            }
-        ],
-        link: [
-            {
-            rel: 'icon',
-            type: 'image/x-icon',
-            href: '/lilo.webp'
-            }
-        ],
-        script: [
-            {
-            src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js',
-            ssr: true
-            }
-        ]
         };
     });
   
 </script>
-<style>
-    @import 'bootstrap/dist/css/bootstrap.css';
-    @import '~/css/styles.css'
-</style>
   
