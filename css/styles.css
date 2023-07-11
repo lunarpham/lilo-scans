@@ -70,12 +70,9 @@ li {
 footer .container-fluid {
     background-color: #D08585;
     color: white;
-    margin-top: 100vh;
+    margin-top: 5rem;
 }
 
-footer {
-    margin-top: 10rem;
-}
 
 /*#manga-header {
     background-size: cover;
@@ -159,6 +156,22 @@ footer {
     height: 100%;
 }
 
+.update-body {
+    padding: 0rem 5%;
+}
+
+@media screen and (min-width: 1400px){
+    .link-list {
+        transform: translateY(-10rem);
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1399px) {
+    .link-list {
+        transform: translateY(-5rem);
+    }    
+}
+
 @media screen and (min-width: 1201px){
     .summary-text {
         max-height: 8rem;
@@ -211,6 +224,10 @@ footer {
 
     .manga-cover {
         width: 90%;
+    }
+
+    #reading-links {
+        top: -15rem;
     }
 
 }

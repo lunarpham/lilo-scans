@@ -1,8 +1,5 @@
 <template>
-    <div> 
-        <Head>
-            <title>{{ manga.title }} - Lilo Translation</title>
-        </Head>
+    <div>
         <section
             id="manga-header"
             :style="{
@@ -83,7 +80,17 @@
         </section>
         <section id="reading-links">
             <div class="container px-4">
-                <h5 class="fw-bold">DANH SÁCH LINK ĐỌC</h5>
+                <h5 class="fw-bold mb-4">DANH SÁCH LINK ĐỌC</h5>
+                <ul v-for="link in manga.links" :key="link.label" class="p-0 link-list">
+                    <li>
+                        <NuxtLink :to="`${ link.url }`" target="_blank" class="container bg-white shadow-sm p-0 d-flex link-underline link-underline-opacity-0 link-secondary rounded-2">
+                            <div class="start-block rounded-start-2"></div>
+                            <div class="update-body w-100 py-2 row">
+                                <div class="col-md-12">{{ link.label }}</div>
+                            </div>
+                        </NuxtLink>
+                    </li>
+                </ul>
             </div>        
         </section>
     </div>
@@ -114,12 +121,13 @@
     }          
 </script>
 <script setup>
-
     const route = useRoute();
     const { data: manga } = await useFetch('https://api.npoint.io/5db90e7f047a1396a59c/manga/' + route.params.manga_id);
+    console.log( manga._value.title );
 
     useHead(() => {
         return {
+        title: `${ manga._value.title }`,
         meta: [
             {
             hid: 'description',
