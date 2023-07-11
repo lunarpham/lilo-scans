@@ -168,6 +168,30 @@ footer .container-fluid {
     padding: 0rem 5%;
 }
 
+
+.line-bottom {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .line-bottom::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: #D08585;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .line-bottom:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 @media screen and (min-width: 1400px){
     .link-list {
         transform: translateY(-10rem);
