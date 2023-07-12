@@ -8,5 +8,7 @@ export default defineNuxtConfig({
   image: {
     quality: 80,
     format: ['webp']
-  }
+  },
+
+  plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
 })

@@ -57,10 +57,10 @@
         <section id="all-mangas" class="mt-3" :aria-hidden="true">
             <div class="container px-4">
                 <h5 class="fw-bold underline">TẤT CẢ MANGA</h5>
-                <div class="row row-cols-auto g-5 container p-0">
+                <div class="row row-cols-auto container p-0 g-0">
                     <NuxtLink
                         :to="`manga/${manga.id}`"
-                        class="col-md-3 p-4"
+                        class="col-md-3"
                         v-for="manga in mangas"
                         style="text-decoration: none; color: inherit;"
                     >
