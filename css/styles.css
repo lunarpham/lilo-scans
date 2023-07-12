@@ -121,7 +121,11 @@ footer .container-fluid {
 .info-box {
     background-color: white;
     height: 28.5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15);
+    box-shadow: 0 .3rem .3rem rgba(0,0,0,0.25);
+}
+
+.manga-cover {
+    box-shadow: 0 .3rem .3rem rgba(0,0,0,0.25);
 }
 
 .summary-wrapper {

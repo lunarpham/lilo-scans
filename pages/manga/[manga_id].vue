@@ -12,20 +12,20 @@
 
         </section>
         <section>
-            <div class="container-fluid pt-5 title-box">
+            <div class="container-fluid pt-5 title-box" data-tor="place.top place.center shift.up(50%)">
                 <div class="container w-100 mt-4 info-box p-0 rounded-3">
                     <div class="row-col-2">
                         <div class="col-md-4 float-md-end mb-4 ms-md-4 d-flex justify-content-center image-box">
-                            <img
+                            <nuxt-img
                                 :src="manga.img"
                                 alt=""
-                                class="manga-cover shadow rounded-3"
-                            >
+                                class="manga-cover rounded-3"
+                            ></nuxt-img>
                         </div>
                         <div class="col-md-8 px-4 py-5 details-box">
                             <div class="title">
                                 <h1 class="fw-bold manga-title">{{ manga.title }}</h1>
-                                <h4 class="fw-med manga-alias">{{ manga.alias }}</h4>
+                                <h5 class="fw-med manga-alias">{{ manga.alias }}</h5>
                             </div>
 
                             <div class="row">
@@ -69,7 +69,7 @@
                         <div class="row summary-wrapper">
                             <div class="col-md-12 px-4">
                                 <p class="mb-2">Nội dung</p>
-                                <div class="d-flex p-0 container">
+                                <div class="d-flex p-0 container summary-body">
                                     <div class="start-block"></div>
                                     <div class="summary-text px-2 py-1">
                                         <p class="fst-italic mb-0">{{ manga.description }}</p>
