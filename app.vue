@@ -1,10 +1,15 @@
 <template>
-  <div>
+  <Suspense>
+    <template #default>
     <NuxtLayout name="lilo">
       <NuxtPage />
     </NuxtLayout>
+    </template>
     
-  </div>
+    <template #fallback>
+      Loading...
+    </template>
+  </Suspense>
 </template>
 
 <script setup>
@@ -36,5 +41,6 @@
 
 <style>
     @import 'bootstrap/dist/css/bootstrap.css';
-    @import '~/css/styles.css'
+    @import '~/css/styles.css';
+    @import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
 </style>

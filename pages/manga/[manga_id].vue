@@ -1,31 +1,36 @@
 <template>
     <div>
-        <section
+        
+        <!--<section
             id="manga-header"
             :style="{
                 background: `linear-gradient(to bottom, rgba(0,0,0,0.3) 20%, rgba(0, 0, 0, 1)), url('${ manga.cover }')`,
                 backgroundSize: 'cover',
-                backgroundPositionY: '40%',
-                height: '30rem'
+                backgroundPositionY: '30%',
+                height: '25rem'
                 }
-            ">
-
-        </section>
-        <section>
-            <div class="container-fluid pt-5 title-box" data-tor="place.top place.center shift.up(50%)">
-                <div class="container w-100 mt-4 info-box p-0 rounded-3">
-                    <div class="row-col-2">
-                        <div class="col-md-4 float-md-end mb-4 ms-md-4 d-flex justify-content-center image-box">
-                            <nuxt-img
-                                :src="manga.img"
-                                alt=""
-                                class="manga-cover rounded-3"
-                            ></nuxt-img>
+            ">           
+        </section>-->
+        <section class="mt-5 pt-5">
+                <div class="container">
+                    <div class="row info-box">
+                        <div class="col-md-4 py-4 px-4 d-flex justify-content-center image-box">
+                            <div>
+                                <nuxt-img
+                                    :src="manga.img"
+                                    :alt="manga.id"
+                                    class="manga-cover rounded-3 animate__animated animate__fadeInLeft"
+                                ></nuxt-img>
+                            </div>
+                           
                         </div>
-                        <div class="col-md-8 px-4 py-5 details-box">
-                            <div class="title">
-                                <h1 class="fw-bold manga-title">{{ manga.title }}</h1>
-                                <h5 class="fw-med manga-alias">{{ manga.alias }}</h5>
+                        <div class="col px-4 py-4 details-box animate__animated animate__fadeInRight">
+                            
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <h1 class="fw-bold">{{ manga.title }}</h1>
+                                    <h5 class="fw-med">{{ manga.alias }}</h5>
+                                </div>
                             </div>
 
                             <div class="row">
@@ -42,14 +47,16 @@
                                     <p class="fw-bold">{{ manga.format }}</p>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-md-12 d-flex flex-column align-items-start">
                                     <p class="mb-2">Thể loại</p>
-                                    <div class="tags-list mb-4 d-flex flex-row flex-wrap">
+                                    <div class="tags-list mb-3 d-flex flex-row flex-wrap">
                                         <small class="tag rounded-2" v-for="genre in manga.genres" :key="genre">{{ genre }}</small>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-md-4 d-flex flex-column align-items-start">
                                     <p class="mb-0">Năm xuất bản</p>
@@ -64,36 +71,38 @@
                                     <p class="fw-bold tl-status">{{ manga.tlstatus }}</p>
                                 </div>
                             </div>
-                            
-                        </div>
-                        <div class="row summary-wrapper">
-                            <div class="col-md-12 px-4">
-                                <p class="mb-2">Nội dung</p>
-                                <div class="d-flex p-0 container summary-body">
-                                    <div class="start-block"></div>
-                                    <div class="summary-text px-2 py-1">
-                                        <p class="fst-italic mb-0">{{ manga.description }}</p>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="mb-2">Nội dung</p>
+                                    <p class="fst-italic mb-0">{{ manga.description }}</p>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-md-12 d-flex flex-column align-items-start">
+                                    <p class="mb-2">Nhóm dịch</p>
+                                    <div class="tags-list mb-3 d-flex flex-row flex-wrap">
+                                        <small class="tag rounded-2" v-for="group in manga.groups" :key="group">{{ group }}</small>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
-        <section id="reading-links">
+
+        <Disclaimer />
+
+        <section id="reading-links" class="mt-5 animate__animated animate__fadeInUp">
             <div class="container px-4">
-                <h5 class="fw-bold mb-4">DANH SÁCH LINK ĐỌC</h5>
-                <ul v-for="link in manga.links" :key="link.label" class="p-0 link-list">
-                    <li>
-                        <NuxtLink :to="`${ link.url }`" target="_blank" class="container bg-white shadow-sm p-0 d-flex link-underline link-underline-opacity-0 link-secondary rounded-2">
-                            <div class="start-block rounded-start-2"></div>
-                            <div class="update-body w-100 py-2 row">
-                                <div class="col-md-12">{{ link.label }}</div>
-                            </div>
+                <h5 class="fw-bold mb-4 underline">DANH SÁCH LINK ĐỌC</h5>
+                <div class="d-flex flex-wrap flex-row">
+                        <NuxtLink :to="`${ link.url }`" target="_blank" class="custom-box rounded-3" v-for="link in manga.links" :key="link.label" >
+                            {{ link.label }}
                         </NuxtLink>
-                    </li>
-                </ul>
+                </div>
             </div>        
         </section>
     </div>
