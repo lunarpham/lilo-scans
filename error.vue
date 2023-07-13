@@ -11,6 +11,16 @@
 </template>
 <script setup>
     defineProps(['error'])
+    useHead({
+
+        link: [
+            {
+            rel: 'icon',
+            type: 'image/x-icon',
+            href: '/lilo.webp'
+            }
+        ],
+    })
 </script>
 <style scoped>
 
