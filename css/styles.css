@@ -182,10 +182,47 @@ footer .container-fluid {
     transform-origin: bottom left;
 }
 
-.text-under-comic div {
+.text-under-comic {
     text-decoration: none;
     color:inherit;
+    transition: all 0.2s ease-in-out;
 }
+
+.manga-panel {
+    transition: all 0.2s ease-in-out;
+}
+
+.manga-img {
+    transition: all 0.2s ease-in-out;
+}
+
+.manga-panel:hover > .text-under-comic {
+    color: #D08585;
+}
+
+.manga-panel:hover > .view-details {
+    opacity: 1;
+}
+
+.manga-panel:hover > .manga-img {
+    opacity: 0.3;
+}
+
+.view-details {
+    z-index: 999;
+    position: relative;
+    color: white;
+    border: 2px solid #D08585;
+    top: 50%;
+    opacity: 0;
+    padding: 0.5rem;
+    background-color: #D08585;
+    transition: all 0.2s ease-in-out;
+    margin: 0 3rem;
+    text-shadow: 0px 0px 20px rgba(168, 76, 76,0.5);
+    box-shadow: 0px 0px 30px rgba(235, 137, 137, 0.7);
+}
+
 
 @media screen and (max-width:992px) {
     .info-box {
