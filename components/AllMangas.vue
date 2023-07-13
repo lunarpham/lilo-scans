@@ -1,17 +1,16 @@
 <template>
     <div class="row row-cols-auto container p-0 g-0">
         <NuxtLink
-            :to='`manga/${manga.id}`'
-            class="col-md-3 p-2 manga-panel"
+            class="p-2 manga-panel"
             v-for="manga in mangas"
             style="text-decoration: none; color: inherit;"
+            :to="`manga/` + `${ manga.id }`"
         >
-            <div class="view-details text-center text-uppercase fw-bold rounded-2">CHI TIẾT</div>
             <img
                 :src="manga.img"
                 :alt="manga.id"
                 style="width: 100%;"
-                class="rounded-3 border manga-img mb-3"
+                class="rounded-3 border manga-img my-2"
             >
             <div class="text-under-comic fw-bold">{{ manga.title }}</div>
         </NuxtLink>

@@ -84,6 +84,7 @@ body {
     height: 30rem;
     background-size: cover;
     background-position-y: 20%;
+    background-position-x: center;
 }
 
 li {
@@ -190,7 +191,9 @@ footer .container-fluid {
 
 .manga-panel {
     transition: all 0.2s ease-in-out;
+    width: 25%;
 }
+
 
 .manga-img {
     transition: all 0.2s ease-in-out;
@@ -200,29 +203,10 @@ footer .container-fluid {
     color: #D08585;
 }
 
-.manga-panel:hover > .view-details {
-    opacity: 1;
-}
-
 .manga-panel:hover > .manga-img {
-    opacity: 0.3;
-}
-
-.view-details {
-    z-index: 999;
-    position: relative;
-    color: white;
+    box-shadow: 0 0.3rem 0.5rem rgba(87, 24, 24, 0.25);
     border: 2px solid #D08585;
-    top: 50%;
-    opacity: 0;
-    padding: 0.5rem;
-    background-color: #D08585;
-    transition: all 0.2s ease-in-out;
-    margin: 0 3rem;
-    text-shadow: 0px 0px 20px rgba(168, 76, 76,0.5);
-    box-shadow: 0px 0px 30px rgba(235, 137, 137, 0.7);
 }
-
 
 @media screen and (max-width:992px) {
     .info-box {
@@ -233,4 +217,12 @@ footer .container-fluid {
     .image-box {
         width: 100%;
     }
+}
+
+@media screen and (max-width:768px) {
+    .manga-panel {
+        transition: all 0.2s ease-in-out;
+        width: 50%;
+    }
+    
 }

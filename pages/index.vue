@@ -6,7 +6,7 @@
         </header>
 
         <Disclaimer />
-        
+
         <!--<section id="updates" class="pt-5">
             <div class="container">
                 <h5 class="fw-bold">MỚI CẬP NHẬT</h5>
@@ -64,21 +64,17 @@
                     <template #default>
                         <AllMangas />
                     </template>
-                    
+
                     <template #fallback>
                         <Loading />
                     </template>
                 </Suspense>
             </div>
-                
-            
+
+
         </section>
     </div>
 </template>
-<style>
-@import 'bootstrap/dist/css/bootstrap.css';
-@import '~/css/styles.css'
-</style>
 <script setup>
 useHead({
     title: 'Trang chủ - Lilo Translation'
@@ -88,7 +84,9 @@ useSeoMeta({
     ogTitle: 'Lilo Translation',
     ogDescription: 'Biết bố mày là ai không?',
     ogImage: 'https://i.imgur.com/PU44ah4.jpg',
-    url: 'https://lilo-translation.vercel.app/'
+    twitterTitle: 'Lilo Translation',
+    twitterDescription: 'Biết bố mày là ai không?',
+    twitterImage: 'https://i.imgur.com/PU44ah4.jpg'
 })
 
 </script>

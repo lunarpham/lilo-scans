@@ -6,6 +6,10 @@
 
 <script setup>
   useHead({
+        htmlAttrs: {
+            lang: 'en'
+        },
+
         meta: [
             {
             hid: 'description',
@@ -29,10 +33,14 @@
         ]
     })
 
-</script>
+    useSeoMeta({
+        url: 'https://lilo-translation.vercel.app/',
+        ogUrl: 'https://lilo-translation.vercel.app/',
+        twitterCard: 'summary_large_image'
+    })
 
+</script>
 <style>
     @import 'bootstrap/dist/css/bootstrap.css';
     @import '~/css/styles.css';
-    @import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
 </style>
