@@ -1,15 +1,7 @@
 <template>
-  <Suspense>
-    <template #default>
     <NuxtLayout name="lilo">
       <NuxtPage />
     </NuxtLayout>
-    </template>
-    
-    <template #fallback>
-      Loading...
-    </template>
-  </Suspense>
 </template>
 
 <script setup>

@@ -57,24 +57,21 @@
         <section id="all-mangas" class="mt-3" :aria-hidden="true">
             <div class="container px-4">
                 <h5 class="fw-bold underline">TẤT CẢ MANGA</h5>
-                <div class="row row-cols-auto container p-0 g-0">
-                    <NuxtLink
-                        :to="`manga/${manga.id}`"
-                        class="col-md-3"
-                        v-for="manga in mangas"
-                        style="text-decoration: none; color: inherit;"
-                    >
-                        <img
-                            :src="manga.img"
-                            :alt="manga.id"
-                            style="width: 100%;"
-                            class="rounded-3 border mb-3"
-                        >
-                        <div class="text-under-comic fw-bold">{{ manga.title }}</div>
-                    </NuxtLink>
-
-                </div>
             </div>
+            <div class="container">
+
+                <Suspense>
+                    <template #default>
+                        <AllMangas />
+                    </template>
+                    
+                    <template #fallback>
+                        <Loading />
+                    </template>
+                </Suspense>
+            </div>
+                
+            
         </section>
     </div>
 </template>
@@ -86,8 +83,6 @@
 useHead({
     title: 'Trang chủ - Lilo Translation'
 })
-
-const { data: mangas } = await useFetch('https://api.npoint.io/5db90e7f047a1396a59c/manga');
 
 useSeoMeta({
     ogTitle: 'Lilo Translation',
