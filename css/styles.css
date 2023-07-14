@@ -153,6 +153,12 @@ footer .container-fluid {
     border-bottom: 1px solid #D08585;
 }
 
+.custom-box-2 {
+    border: 1px solid #D08585;
+    padding: 1rem;
+}
+
+
 .custom-box {
     border: 1px solid #D08585;
     padding: 1rem;

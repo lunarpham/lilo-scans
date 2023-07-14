@@ -39,7 +39,7 @@
                         <div class="row">
                             <div class="col-md-8 mt-5">
                                 <div>
-                                    <h5 class="fw-bold no-wrap-content border-bottom-grey" >THEO DÕI BỌN MÌNH TẠI</h5>
+                                    <h5 class="fw-bold no-wrap-content border-bottom-grey">THEO DÕI BỌN MÌNH TẠI</h5>
 
                                 </div>
                                 <div class="d-flex flex-wrap flex-row mt-3">
@@ -68,7 +68,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12 member">
+                    <div class="col-xl-12 member mt-5">
+                        <div>
+                            <h5 class="fw-bold no-wrap-content border-bottom-grey">THÀNH VIÊN</h5>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-xl-6 row custom-box-2 rounded-3">
+                                    <div class="col-12 col-md-12 col-xl-3 member-avt">
+                                        <img src="https://i.imgur.com/PU44ah4.jpg" alt="Lilo Translation"
+                                            class="rounded-circle border border-danger-subtle" style="width: 100%;">
+                                    </div>
+                                    <div class="col-12 col-md-12 col-xl-9">
+                                        <h3 class="fw-bold">Tee</h3>
+                                        <p>Slave, redrawer, typesetter</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-md-6 col-xl-6 row custom-box-2 rounded-3">
+                                    <div class="col-12 col-md-12 col-xl-3 member-avt">
+                                        <img src="https://i.imgur.com/PU44ah4.jpg" alt="Lilo Translation"
+                                            class="rounded-circle border border-danger-subtle" style="width: 100%;">
+                                    </div>
+                                    <div class="col-12 col-md-12 col-xl-9">
+                                        <h3 class="fw-bold">Tee</h3>
+                                        <p>Slave, redrawer, typesetter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="col-xl-12 collab">
@@ -87,5 +116,7 @@ useHead({
 })
 </script>
 
-<style>@import 'bootstrap/dist/css/bootstrap.css';
-@import '~/css/styles.css';</style>
+<style>
+@import 'bootstrap/dist/css/bootstrap.css';
+@import '~/css/styles.css';
+</style>
