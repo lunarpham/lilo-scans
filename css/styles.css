@@ -51,10 +51,6 @@ body {
     border-bottom: 1px solid #D08585;
 }
 
-.full-width {
-    display: inline-block;
-  }
-
 .active {
     border-bottom: 3px solid #D08585;
 }
@@ -141,40 +137,9 @@ footer .container-fluid {
     padding: 0 5%;
 }
 
-<<<<<<< HEAD
-
-.line-bottom {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .line-bottom::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: -2px;
-    left: 0;
-    background-color: #D08585;
-    transform-origin: bottom right;
-    transition: transform 0.35s ease-out;
-  }
-  
-  .line-bottom:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-@media screen and (min-width: 1400px){
-    .link-list {
-        transform: translateY(-10rem);
-    }
-=======
 .underline {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #D08585;
->>>>>>> ed5c7667de66551b187bd746b40aee0b950f1473
 }
 
 .custom-box {
