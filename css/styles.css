@@ -208,6 +208,10 @@ footer .container-fluid {
     border: 2px solid #D08585;
 }
 
+.info-about {
+    margin-top: 150px;
+}
+
 @media screen and (max-width:992px) {
     .info-box {
         display: flex;
