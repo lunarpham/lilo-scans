@@ -47,6 +47,16 @@ body {
     background-color: #D08585;
 }
 
+.no-wrap-content {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.border-bottom-grey {
+    border-bottom: 2px solid rgba(64, 64, 64, 0.4);
+    padding-bottom: 4px;
+}
+
 #mainNav {
     border-bottom: 1px solid #D08585;
 }
@@ -78,6 +88,7 @@ body {
 .nav-link:active {
     color: #D08585;
 }
+
 
 #masthead {
     background-image: url('https://liloscans.sirv.com/Covers/lilo-notext.webp');
