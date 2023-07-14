@@ -1,7 +1,7 @@
 <template>
     <div class="row row-cols-auto container p-0 g-0">
         <NuxtLink
-            class="p-2 manga-panel"
+            class="col-md-3 p-2 manga-panel"
             v-for="manga in mangas"
             style="text-decoration: none; color: inherit;"
             :to="`manga/` + `${ manga.id }`"
