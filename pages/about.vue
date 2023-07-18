@@ -73,8 +73,8 @@
                         </div>
 
                         <div class="container mt-1">
-                            <div class="row gx-5 class=" v-for="members in member" ${members.id}`>
-                                <div class="col-12 col-md-6">
+                            <div class="row gx-5 class=" >
+                                <div class="col-12 col-md-6 " v-for="members in member" ${members.id}`>
                                     <div class="custom-box-member rounded-3 row mt-4">
                                         <div class="col-12 col-md-12 col-xl-3 member-avt">
                                             <img :src="members.avt" :alt="members.id"
