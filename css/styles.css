@@ -158,6 +158,10 @@ footer .container-fluid {
     padding: 1rem;
 }
 
+.custom-box-collab {
+    border: 1px solid #D08585;
+    padding: 3rem;
+}
 
 .custom-box {
     border: 1px solid #D08585;
@@ -224,7 +228,7 @@ footer .container-fluid {
     box-shadow: 0 0.3rem 0.5rem rgba(87, 24, 24, 0.25);
     border: 2px solid #D08585;
 }
-
+ /* About-css*/
 .info-about {
     margin-top: 150px;
 }

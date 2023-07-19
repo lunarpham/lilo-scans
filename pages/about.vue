@@ -73,15 +73,15 @@
                         <div id="app">
                             <div class="container mt-1">
                                 <div class="row gx-5">
-                                    <div class="col-12 col-md-6" v-for="member in Object.keys(members)" :key="member.id">
+                                    <div class="col-12 col-md-6" v-for="member in Object.keys(membershi)" :key="member.id">
                                         <div class="custom-box-member rounded-3 row mt-4">
-                                            <div class="col-12 col-md-12 col-xl-3 member-avt">
-                                                <img :src="members[member].avt" :alt="members[member].id"
+                                            <div class="col-md-12 col-xl-3 member-avt">
+                                                <img :src="membershi[member].avt" :alt="membershi[member].id"
                                                     class="rounded-circle border border-danger-subtle" style="width: 100%;">
                                             </div>
-                                            <div class="col-12 col-md-12 col-xl-9">
-                                                <h3 class="fw-bold">{{ members[member].name }}</h3>
-                                                <p>{{ members[member].position }}</p>
+                                            <div class="col-md-12 col-xl-9">
+                                                <h3 class="fw-bold">{{ membershi[member].name }}</h3>
+                                                <p>{{ membershi[member].position }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -90,9 +90,32 @@
                                 <div v-else-if="error">{{ error }}</div>
                             </div>
                         </div>
-                        <div class="col-xl-12 collab">
+                        <div id="collab">
+                            <div class="mt-5">
+                                <h5 class="fw-bold no-wrap-content border-bottom-grey">TEAM DỊCH COLLAB</h5>
+                            </div>
+                            <div class="container mt-1">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="text-center custom-box-collab rounded-3 mt-4" style=" padding: 3rem;">
+                                            <div class="fw-bold">
+                                                Ning’s Basement
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="text-center custom-box-collab rounded-3 mt-4" style=" padding: 3rem;">
+                                            <div class="fw-bold">
+                                                Bruh Translation
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -103,7 +126,7 @@
 useHead({
     title: 'Trang chủ - Lilo Translation'
 })
-const { data: members } = await useFetch('https://api.npoint.io/0c629e10bda267348acd/member');
+const { data: membershi } = await useFetch('https://api.npoint.io/0c629e10bda267348acd/memberhi');
 
 
 </script>
