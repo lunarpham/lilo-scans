@@ -1,7 +1,5 @@
 <template>
     <div>
-        <header></header>
-
         <selection>
             <div class="container">
                 <div class="row px-4">
@@ -72,20 +70,24 @@
                             <h5 class="fw-bold no-wrap-content border-bottom-grey">THÀNH VIÊN</h5>
                         </div>
 
-                        <div class="container mt-1">
-                            <div class="row gx-5 class=" >
-                                <div class="col-12 col-md-6 " v-for="members in member" ${members.id}`>
-                                    <div class="custom-box-member rounded-3 row mt-4">
-                                        <div class="col-12 col-md-12 col-xl-3 member-avt">
-                                            <img :src="members.avt" :alt="members.id"
-                                                class="rounded-circle border border-danger-subtle" style="width: 100%;">
-                                        </div>
-                                        <div class="col-12 col-md-12 col-xl-9">
-                                            <h3 class="fw-bold">{{ members.name }}</h3>
-                                            <p>{{ members.position }}</p>
+                        <div id="app">
+                            <div class="container mt-1">
+                                <div class="row gx-5">
+                                    <div class="col-12 col-md-6" v-for="member in Object.keys(members)" :key="member.id">
+                                        <div class="custom-box-member rounded-3 row mt-4">
+                                            <div class="col-12 col-md-12 col-xl-3 member-avt">
+                                                <img :src="members[member].avt" :alt="members[member].id"
+                                                    class="rounded-circle border border-danger-subtle" style="width: 100%;">
+                                            </div>
+                                            <div class="col-12 col-md-12 col-xl-9">
+                                                <h3 class="fw-bold">{{ members[member].name }}</h3>
+                                                <p>{{ members[member].position }}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div v-if="loading">Loading...</div>
+                                <div v-else-if="error">{{ error }}</div>
                             </div>
                         </div>
                         <div class="col-xl-12 collab">
@@ -95,15 +97,15 @@
                 </div>
             </div>
         </selection>
-
-        <footer></footer>
     </div>
 </template>
 <script setup>
-const { data: member } = await useFetch('https://api.npoint.io/0c629e10bda267348acd/members');
 useHead({
     title: 'Trang chủ - Lilo Translation'
 })
+const { data: members } = await useFetch('https://api.npoint.io/0c629e10bda267348acd/member');
+
+
 </script>
 
 <style>
