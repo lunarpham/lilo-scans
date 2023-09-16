@@ -12,8 +12,6 @@
                             <option value="system">Hệ thống</option>
                             <option value="light">Đỏ sáng</option>
                             <option value="dark">Xanh tối</option>
-                            <option value="purple">Tím vàng</option>
-                            <option value="blue">Xanh tím</option>
                         </select>
                     </li>
                 </ul>

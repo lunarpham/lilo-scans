@@ -16,7 +16,7 @@
     --stt-done: #4662af;
     --layout-color:#D08585;
     --border-color:#D08585;
-    --object-bg-color:transparent;
+    --object-bg-color:#f5eaea;
     --object-text-color:#D08585;
     --object-bg-color-hover:#D08585;
     --tag-bg-color:#D08585;
@@ -27,62 +27,24 @@
 }
 
 .dark-mode {
-    --bg-color: #1a202c;
+    --bg-color: #121318;
     --text-color: #ffffff;
-    --object-color: #4fd1c5;
-    --layout-color:#011627;
-    --border-color:#4fd1c5;
-    --object-bg-color:transparent;
+    --object-color: #D08585;
+    --layout-color:#050707;
+    --border-color:#D08585;
+    --object-bg-color:#2f3239;
     --object-text-color:#ffffff;
-    --object-bg-color-hover:#4fd1c5;
-    --tag-bg-color:transparent;
+    --object-bg-color-hover:#D08585;
+    --tag-bg-color:#2f3239;
     --stt-on: #4bac33;
     --stt-pause: #c74f4f;
     --stt-done: #456bd3;
-    --nav-bg-color:#011627;
+    --nav-bg-color:#2f3239;
     --navbrand-color:#ffffff;
-    --navbrand-color-hover:#4fd1c5;
+    --navbrand-color-hover:#D08585;
     --shadow-color: #1b5c56c0;
 }
 
-
-.purple-mode {
-    --bg-color: #1b0333;
-    --text-color: #ffffff;
-    --object-color: #ffa000;
-    --layout-color:#160329;
-    --border-color:#ffa000;
-    --object-bg-color:transparent;
-    --object-text-color:#ffffff;
-    --object-bg-color-hover:#ffa000;
-    --tag-bg-color:transparent;
-    --stt-on: #4bac33;
-    --stt-pause: #c74f4f;
-    --stt-done: #456bd3;
-    --nav-bg-color:#160329;
-    --navbrand-color:#ffffff;
-    --navbrand-color-hover:#ffa000;
-    --shadow-color: #665118dc;
-}
-
-.blue-mode {
-    --bg-color: #f1f6f7;
-    --text-color: #55508D;
-    --object-color: #141141;
-    --layout-color: #55508D;
-    --border-color:#55508D;
-    --object-bg-color:transparent;
-    --object-text-color:#55508D;
-    --object-bg-color-hover:#55508D;
-    --tag-bg-color:#55508D;
-    --stt-on: #4bac33;
-    --stt-pause: #c74f4f;
-    --stt-done: #456bd3;
-    --nav-bg-color:#f1f6f7;
-    --navbrand-color:#55508D;
-    --navbrand-color-hover:#141141;
-    --shadow-color: #2c285857;
-}
 
 /*Style for body/html*/
 html,
@@ -106,7 +68,6 @@ body {
     padding: 0;
 }
 
-
 ::-webkit-scrollbar-track {
     background-color: #ffffff;
 }
@@ -118,6 +79,14 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--object-color);
+}
+
+.pastel-bg {
+    background-color: #FFEDED;
+}
+
+.red-border {
+    border: 1px solid var(--border-color);
 }
 
 #mainNav {
@@ -194,10 +163,12 @@ footer .container-fluid {
     margin-right: 0.3rem;
     margin-bottom: 0.3rem;
     flex-wrap: nowrap;
-    border: 1px solid var(--border-color);
 }
 
 .status-on {
+    padding: 0.1rem 1rem;
+    background-color: #2f692536;
+    border-radius: 0.3rem;
     color: var(--stt-on);
 }
 
@@ -207,6 +178,10 @@ footer .container-fluid {
 
 .status-done {
     color: var(--stt-done);
+}
+
+#manga-info {
+    padding-top: 15rem;
 }
 
 .manga-cover {
@@ -235,14 +210,11 @@ footer .container-fluid {
 }
 
 .custom-box {
-    border: 1px solid var(--border-color);
-    padding: 1rem;
+    padding: 0.5rem;
     margin-bottom: 1rem;
     text-decoration: none;
     color: var(--object-text-color);
     font-weight: 600;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
     transition: all 0.2s ease-in-out;
     background-color: var(--object-bg-color);
 }
@@ -284,7 +256,7 @@ footer .container-fluid {
 
 .manga-panel {
     transition: all 0.2s ease-in-out;
-    width: 25%;
+    width: 20%;
 }
 
 
@@ -299,6 +271,10 @@ footer .container-fluid {
 .manga-panel:hover > .manga-img {
     box-shadow: 0 0.3rem 0.5rem var(--shadow-color);
     border: 2px solid var(--object-color);
+}
+
+.chapter-date {
+    color: var(--text-color)
 }
 
 @media screen and (max-width:992px) {

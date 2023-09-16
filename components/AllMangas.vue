@@ -17,5 +17,5 @@
     </div>
 </template>
 <script setup>
-    const { data: mangas } = await useFetch('https://api.npoint.io/5db90e7f047a1396a59c/manga');
+    const { data: mangas } = useFetch('https://api.npoint.io/5db90e7f047a1396a59c/manga');
 </script>

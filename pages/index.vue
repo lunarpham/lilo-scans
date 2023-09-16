@@ -55,8 +55,12 @@
             </div>
         </section>-->
         <section id="all-mangas" class="mt-3" :aria-hidden="true">
-            <div class="container px-4">
-                <h5 class="fw-bold underline">TẤT CẢ MANGA</h5>
+            <div class="container px-4 align-items-center">
+                <div class="d-flex underline mb-3">
+                    <h5 class="mb-0"><i class="fa-solid fa-book-open me-2"></i></h5>
+                    <h5 class="fw-bold mb-0">TẤT CẢ MANGA</h5>
+                </div>
+                
             </div>
             <div class="container">
 

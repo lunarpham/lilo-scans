@@ -5,7 +5,7 @@
                 <div class="row info-box">
 
                     <!--Image box for manga cover-->
-                    <div class="col-md-4 py-4 px-4 d-flex justify-content-center image-box">
+                    <div class="col-md-3 py-4 px-4 flex-column justify-content-center image-box">
                         <div>
                             <img
                                 :src="manga.img"
@@ -13,6 +13,14 @@
                                 class="manga-cover rounded-3"
                             >
                         </div>
+                        <div class="container p-0 mt-3">
+                            
+                            <div class="d-flex flex-column">
+                                <NuxtLink :to="`${ link.url }`" target="_blank" class="custom-box rounded-3 w-100 mx-0 mb-2 text-center" v-for="link in manga.links" :key="link.label" >
+                                    {{ link.label }}
+                                </NuxtLink>
+                            </div>
+                        </div>        
                         
                     </div>
 
@@ -29,24 +37,15 @@
 
                         <!--Manga info R1-->
                         <div class="row">
-                            <div class="col-md-5 d-flex flex-column align-items-start">
-                                <p class="mb-0">Tác giả</p>
+                            <div class="col-md-5 d-flex flex-row align-items-start">
+                                <p class="me-2">Tác giả</p>
                                 <p class="fw-bold">{{ manga.author }}</p>
-                            </div>
-                            <div class="col-md-5 d-flex flex-column align-items-start">
-                                <p class="mb-0">Hoạ sĩ</p>
-                                <p class="fw-bold">{{ manga.artist }}</p>
-                            </div>
-                            <div class="col-md-2 d-flex flex-column align-items-start">
-                                <p class="mb-0">Loại</p>
-                                <p class="fw-bold">{{ manga.format }}</p>
                             </div>
                         </div>
 
                         <!--Manga info R2-->
                         <div class="row">
                             <div class="col-md-12 d-flex flex-column align-items-start">
-                                <p class="mb-2">Thể loại</p>
                                 <div class="tags-list mb-3 d-flex flex-row flex-wrap">
                                     <small class="tag rounded-2" v-for="genre in manga.genres" :key="genre">{{ genre }}</small>
                                 </div>
@@ -56,15 +55,6 @@
                         <!--Manga info R3-->
                         <div class="row">
                             <div class="col-md-4 d-flex flex-column align-items-start">
-                                <p class="mb-0">Năm xuất bản</p>
-                                <p class="fw-bold">{{ manga.pbyear }}</p>
-                            </div>
-                            <div class="col-md-4 d-flex flex-column align-items-start">
-                                <p class="mb-0">Tình trạng</p>
-                                <p class="fw-bold pb-status">{{ manga.pbstatus }}</p>
-                            </div>
-                            <div class="col-md-4 d-flex flex-column align-items-start">
-                                <p class="mb-0">Bản dịch</p>
                                 <p class="fw-bold tl-status">{{ manga.tlstatus }}</p>
                             </div>
                         </div>
@@ -72,35 +62,38 @@
                         <!--Manga info R4-->
                         <div class="row">
                             <div class="col-md-12">
-                                <p class="mb-2">Nội dung</p>
                                 <p class="fst-italic mb-0">{{ manga.description }}</p>
                             </div>
                         </div>
 
                         <!--Manga info R5-->
                         <div class="row mt-3">
-                            <div class="col-md-12 d-flex flex-column align-items-start">
-                                <p class="mb-2">Nhóm dịch</p>
+                            <div class="col-md-12 d-flex flex-row align-items-start">
+                                <p class="me-2">Nhóm dịch</p>
                                 <div class="tags-list mb-3 d-flex flex-row flex-wrap">
                                     <small class="tag rounded-2" v-for="group in manga.groups" :key="group">{{ group }}</small>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="row mt-3">
+                                    <div class="d-flex">
+                                        <h5 class="me-2"><i class="fa-solid fa-list-ul"></i></h5>
+                                        <h5 class="fw-bold">DANH SÁCH CHƯƠNG</h5>
+                                    </div>
+                                    <div class="row flex-row mt-2 mx-2 p-1">
+                                            <NuxtLink :to="'/chapter/' + `${ chapter.imgurhash }`" v-for="chapter in manga.chapters" class="col-md-2 me-3 custom-box p-3 rounded-3 text-start flex-column" >
+                                                <p class="fw-bold mb-0">{{ chapter.chapname }}</p>
+                                                <p class="mb-0 chapter-date">2023-07-22</p>
+                                            </NuxtLink>
+                                    
+                                    </div>
+                                    
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="reading-links" class="mt-5">
-            <div class="container px-4">
-                <h5 class="fw-bold mb-4 underline">DANH SÁCH LINK ĐỌC</h5>
-                <div class="d-flex flex-wrap flex-row">
-                    <NuxtLink :to="`${ link.url }`" target="_blank" class="custom-box rounded-3" v-for="link in manga.links" :key="link.label" >
-                        {{ link.label }}
-                    </NuxtLink>
-                </div>
-            </div>        
         </section>
     </div>
 </template>
@@ -108,16 +101,7 @@
 
     export default {
         mounted() {
-            const pbstatus = this.$el.querySelector(".pb-status").innerHTML;
             const tlstatus = this.$el.querySelector(".tl-status").innerHTML;
-
-            if (pbstatus === "Đã hoàn thành") {
-            this.$el.querySelector(".pb-status").classList.add("status-done");
-            } else if (pbstatus === "Vẫn tiếp tục") {
-            this.$el.querySelector(".pb-status").classList.add("status-on");
-            } else if (pbstatus === "Tạm ngưng") {
-            this.$el.querySelector(".pb-status").classList.add("status-pause");
-            }
 
             if (tlstatus === "Đã hoàn thành") {
             this.$el.querySelector(".tl-status").classList.add("status-done");

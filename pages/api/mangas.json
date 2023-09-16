@@ -1,62 +1,250 @@
 {
-    "mangas": [
-        {
-            "id": "shimotsuki",
-            "title": "Shimotsuki-san wa Mob ga Suki",
-            "alias": "Shimotsuki-san chỉ thích nhân vật nền",
-            "img": "https://cdn.myanimelist.net/images/manga/2/282409.jpg",
-            "cover": "https://i.imgur.com/oSO6iPt.jpg",
-            "author": "Yagami Kagami",
-            "artist": "Kigurumi",
-            "pbstatus": "Vẫn tiếp tục",
-            "tlstatus": "Đang tiến hành",
-            "format": "Series",
-            "pbyear": "2022",
-            "genre": [
-            "Comedy",
-            "Romance",
-            "School Life",
-            "Slice of Life"
-            ],
-            "description": "Chỉ riêng cậu là đặc biệt! <br>Sau khi tan học, Nakayama Koutarou quay trở lại trường để lấy vài thứ cậu bỏ quên và rồi nhìn thấy Shimotsuki Shiho đang ngủ gật giữa lớp học vắng tanh. <br> Shimotsuki được đồn đại là đối tượng nhắm đến của Ryuuzaki Ryouma - một tên đào hoa lập hẳn một dàn harem trong lớp, nhưng biểu cảm của cô lúc nào cũng thờ ơ, và chưa ai từng thấy cô nở một nụ cười.<br>Ấy thế mà, ngay lúc này đây, những ngón tay trắng trẻo của cô gái ấy đang nắm lấy bàn tay của Koutarou——?<br>Đây là câu chuyện về một mối quan hệ bí mật giữa một nữ chính và một nhân vật nền!",
-            "linklist": [
-            "Mangadex",
-            "Otakusan"
-            ],
-            "link": [
-            "https://mangadex.org/title/32252a48-b20a-4a1d-b1b0-b46679bbae47",
-            "https://otakusan.net/manga/shimotsuki-san-wa-mob-ga-suki/"
-            ]
-        },
-        {
-            "id": "mememori",
-            "title": "Mememori-kun ni wa Kanawanai",
-            "alias": "Mememori-kun Vô Đối",
-            "img": "https://cdn.myanimelist.net/images/manga/2/249072.jpg",
-            "cover": "https://i.imgur.com/Pntzzpg.jpg",
-            "author": "Moricocco",
-            "artist": "Moricocco",
-            "pbstatus": "Vẫn tiếp tục",
-            "tlstatus": "Đang tiến hành",
-            "format": "Series",
-            "pbyear": "2020",
-            "genre": [
-            "Comedy",
-            "Romance",
-            "School Life",
-            "Gender Swap"
-            ],
-            "description": "Mình trở thành một thiếu nữ xinh đẹp sao...?<br>Mememori-kun thức dậy vào một buổi sáng và phát hiện ra cậu đã biến thành con gái. Tuy không giấu nổi vẻ bàng hoàng nhưng vì đã trở nên xinh đẹp nên cậu quyết định sẽ tận hưởng cuộc sống mới hết mình.",
-            "linklist": [
-            "Mangadex",
-            "Otakusan",
-            "Cuutruyen"
-            ],
-            "link": [
-            "https://mangadex.org/title/fc0a7b86-992e-4126-b30f-ca04811979bf",
-            "https://otakusan.net/manga-detail/80970",
-            "https://cuutruyen.net/mangas/835"
-            ]
+    "manga": {
+      "shimotsuki": {
+        "id": "shimotsuki",
+        "title": "Shimotsuki-san wa Mob ga Suki",
+        "alias": "Shimotsuki-san chỉ thích nhân vật nền",
+        "img": "https://liloscans.sirv.com/Covers/shimotsuki.png?profile=WEBP70",
+        "cover": "https://i.imgur.com/oSO6iPt.jpg",
+        "author": "Yagami Kagami",
+        "artist": "Kigurumi",
+        "pbstatus": "Vẫn tiếp tục",
+        "tlstatus": "Đang tiến hành",
+        "format": "Series",
+        "pbyear": "2022",
+        "genres": [
+          "Comedy",
+          "Romance",
+          "School Life",
+          "Slice of Life"
+        ],
+        "description": "Chỉ riêng cậu là đặc biệt! Sau khi tan học, Nakayama Koutarou quay trở lại trường để lấy vài thứ cậu bỏ quên và rồi nhìn thấy Shimotsuki Shiho đang ngủ gật giữa lớp học vắng tanh. Shimotsuki được đồn đại là đối tượng nhắm đến của Ryuuzaki Ryouma - một tên đào hoa lập hẳn một dàn harem trong lớp, nhưng biểu cảm của cô lúc nào cũng thờ ơ, và chưa ai từng thấy cô nở một nụ cười. Ấy thế mà, ngay lúc này đây, những ngón tay trắng trẻo của cô gái ấy đang nắm lấy bàn tay của Koutarou——? Đây là câu chuyện về một mối quan hệ bí mật giữa một nữ chính và một nhân vật nền!",
+        "groups": [
+          "Lilo Translation"
+        ],
+        "links": [
+          {
+            "label": "MangaDex",
+            "url": "https://mangadex.org/title/32252a48-b20a-4a1d-b1b0-b46679bbae47"
+          },
+          {
+            "label": "Blogtruyen",
+            "url": "https://blogtruyenmoi.com/31054"
+          }
+        ],
+        "chapters": {
+          "1": {
+            "chapid": "1",
+            "chapname": "Chương 1",
+            "imgurhash": "LOgyqCb"
+          },
+          "2": {
+            "chapid": "2",
+            "chapname": "Chương 2",
+            "imgurhash": "MpHY1vh"
+          }
         }
-    ]
-}
+      },
+      "mememori": {
+        "id": "mememori",
+        "title": "Mememori-kun ni wa Kanawanai",
+        "alias": "Mememori-kun Vô Đối",
+        "img": "https://liloscans.sirv.com/Covers/mememori.jpg?profile=WEBP70",
+        "cover": "https://i.imgur.com/HgktcwT.jpg",
+        "author": "Moricocco",
+        "artist": "Moricocco",
+        "pbstatus": "Tạm ngưng",
+        "tlstatus": "Đang tiến hành",
+        "format": "Series",
+        "pbyear": "2020",
+        "genres": [
+          "Comedy",
+          "Romance",
+          "School Life",
+          "Gender Swap"
+        ],
+        "description": "Mình trở thành một thiếu nữ xinh đẹp sao...? Mememori-kun thức dậy vào một buổi sáng và phát hiện ra cậu đã biến thành con gái. Tuy không giấu nổi vẻ bàng hoàng nhưng vì đã trở nên xinh đẹp nên cậu quyết định sẽ tận hưởng cuộc sống mới hết mình.",
+        "groups": [
+          "Lilo Translation"
+        ],
+        "links": [
+          {
+            "label": "MangaDex",
+            "url": "https://mangadex.org/title/fc0a7b86-992e-4126-b30f-ca04811979bf/"
+          },
+          {
+            "label": "Blogtruyen",
+            "url": "https://blogtruyenmoi.com/30793"
+          },
+          {
+            "label": "Cuutruyen",
+            "url": "https://cuutruyen.net/mangas/835"
+          },
+          {
+            "label": "Otakusan",
+            "url": "https://otakusan.net/manga-detail/80970"
+          }
+        ],
+        "chapters": {
+          "1": {
+            "chapid": "1",
+            "chapname": "Chương 1",
+            "imgurhash": "LOgyqCb"
+          },
+          "2": {
+            "chapid": "2",
+            "chapname": "Chương 2",
+            "imgurhash": "MpHY1vh"
+          }
+        }
+      },
+      "valxlove": {
+        "id": "valxlove",
+        "title": "Val x Love",
+        "alias": "Ikusa x Koi",
+        "img": "https://liloscans.sirv.com/Covers/ikusa.jpg?profile=WEBP70",
+        "cover": "https://i.imgur.com/XOX1N8f.jpg",
+        "author": "Asakura Ryousuke",
+        "artist": "Asakura Ryousuke",
+        "pbstatus": "Vẫn tiếp tục",
+        "tlstatus": "Đang tiến hành",
+        "format": "Series",
+        "pbyear": "2015",
+        "genres": [
+          "Comedy",
+          "Romance",
+          "Action",
+          "Seinen",
+          "Ecchi",
+          "Fantasy",
+          "Supernatural"
+        ],
+        "description": "Ẩn mình dưới căn nhà của cậu nam sinh Akutsu Takuma, người luôn mang trên mình nỗi khiếp sợ tới những người xung quanh, là chín chị em Valkyrie! Sứ mệnh của họ là tiêu diệt những ác ma đang lăm le tới sự tồn vong của nhân loại. Còn nhiệm vụ của cậu nam sinh là không còn cách nào khác ngoài thăng cấp độ cho chín chị em kia. Nhưng để làm được điều đó, cậu cần phải khiến cho bọn họ đạt tới hưng phấn.",
+        "groups": [
+          "Lilo Translation"
+        ],
+        "links": [
+          {
+            "label": "Otakusan",
+            "url": "https://otakusan.net/manga-detail/87070"
+          },
+          {
+            "label": "Cuutruyen",
+            "url": "https://cuutruyen.net/mangas/1310"
+          }
+        ],
+        "chapters": {
+          "1": {
+            "chapid": "1",
+            "chapname": "Chương 1",
+            "imgurhash": "LOgyqCb"
+          },
+          "2": {
+            "chapid": "2",
+            "chapname": "Chương 2",
+            "imgurhash": "MpHY1vh"
+          }
+        }
+      },
+      "henaiheart": {
+        "id": "henaiheart",
+        "title": "Henai Heartbeat",
+        "alias": "Cô bạn gái khiến tim tôi đập thình thịch",
+        "img": "https://liloscans.sirv.com/Covers/henai.jpg?profile=WEBP70",
+        "cover": "https://i.imgur.com/AQyDrwb.jpg",
+        "author": "Shunsuke Iino",
+        "artist": "Shunsuke Iino",
+        "pbstatus": "Vẫn tiếp tục",
+        "tlstatus": "Đang tiến hành",
+        "format": "Series",
+        "pbyear": "2023",
+        "genres": [
+          "Shounen",
+          "Romance",
+          "Pyschological",
+          "Thriller",
+          "School Life"
+        ],
+        "description": "Haruka Kawatsuji, một cậu trai sống sót kỳ diệu sau khi rơi từ ban công căn hộ nhà cậu lúc còn nhỏ. Mặc cho nỗ lực tìm kiếm cảm giác rùng rợn như khoảnh khắc rơi khỏi ban công đó trong thể thao, kể cả phim kinh dị; cậu vẫn chưa từng cảm thấy được sống một lần. Cho đến khi định mệnh sắp đặt cậu gặp một cô gái với tính cách quái dị.",
+        "groups": [
+          "Lilo Translation"
+        ],
+        "links": [
+          {
+            "label": "MangaDex",
+            "url": "https://mangadex.org/title/a5680222-eb5c-4954-bf54-e1187ecc285b"
+          },
+          {
+            "label": "Otakusan",
+            "url": "https://otakusan.net/manga-detail/85521"
+          },
+          {
+            "label": "Cuutruyen",
+            "url": "https://cuutruyen.net/mangas/923"
+          }
+        ],
+        "chapters": {
+          "1": {
+            "chapid": "1",
+            "chapname": "Chương 1",
+            "imgurhash": "LOgyqCb"
+          },
+          "2": {
+            "chapid": "2",
+            "chapname": "Chương 2",
+            "imgurhash": "MpHY1vh"
+          }
+        }
+      },
+      "sorekimi": {
+        "id": "sorekimi",
+        "title": "Soredemo Kimi o Shiawase ni Shitai",
+        "alias": "Tớ vẫn muốn làm cậu hạnh phúc",
+        "img": "https://liloscans.sirv.com/Covers/soredemo.jpg?profile=WEBP70",
+        "cover": "https://liloscans.sirv.com/Covers/soredemo.jpg?profile=WEBP70",
+        "author": "Shunsuke Noro",
+        "artist": "Tokixwa",
+        "pbstatus": "Đã hoàn thành",
+        "tlstatus": "Đang tiến hành",
+        "format": "Series",
+        "pbyear": "2021",
+        "genres": [
+          "Romance",
+          "Comedy",
+          "School Life",
+          "Slice of Life"
+        ],
+        "description": "Mặc dù họ sống cách xa nhau, nhưng tình cảm của Kouya dành cho cô bạn ấy vẫn ngày càng tăng lên thông qua việc nhắn tin với nhau qua mạng xã hội hằng ngày, và Kouya đã quyết định nhân cơ hội gặp mặt nhau sau một khoảng thời gian dài đằng đẵng để tiết lộ cảm xúc của mình với cô ấy!",
+        "groups": [
+          "Ning's Basement",
+          "Lilo Translation"
+        ],
+        "links": [
+          {
+            "label": "MangaDex",
+            "url": "https://mangadex.org/title/d0b73d72-9665-4f1f-9113-16eb163ba619"
+          },
+          {
+            "label": "Blogtruyen",
+            "url": "https://blogtruyenmoi.com/29339/to-van-muon-lam-cau-hanh-phuc"
+          },
+          {
+            "label": "Cuutruyen",
+            "url": "https://cuutruyen.net/mangas/563"
+          }
+        ],
+        "chapters": {
+          "1": {
+            "chapid": "1",
+            "chapname": "Chương 1",
+            "imgurhash": "LOgyqCb"
+          },
+          "2": {
+            "chapid": "2",
+            "chapname": "Chương 2",
+            "imgurhash": "MpHY1vh"
+          }
+        }
+      }
+    }
+  }
