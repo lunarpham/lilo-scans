@@ -173,10 +173,16 @@ footer .container-fluid {
 }
 
 .status-pause {
+    padding: 0.1rem 1rem;
+    background-color: #693b2536;
+    border-radius: 0.3rem;
     color: var(--stt-pause);
 }
 
 .status-done {
+    padding: 0.1rem 1rem;
+    background-color: #254a6936;
+    border-radius: 0.3rem;
     color: var(--stt-done);
 }
 
