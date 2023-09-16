@@ -1,6 +1,6 @@
 <template>
     <div class="row" v-for="image in imagespanels.data.images">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <embed :src="image.link" :alt="image.id" class="w-100 mb-4">
         </div>
         
