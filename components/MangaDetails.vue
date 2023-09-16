@@ -55,7 +55,9 @@
                         <!--Manga info R3-->
                         <div class="row">
                             <div class="col-md-4 d-flex flex-column align-items-start">
-                                <p class="fw-bold tl-status">{{ manga.tlstatus }}</p>
+                                <template v-if="manga.tlstatus === 'Đang tiến hành'"><p class="fw-bold tl-status status-on">Đang tiến hành</p></template>
+                                <template v-if="manga.tlstatus === 'Đã hoàn thành'"><p class="fw-bold tl-status status-done">Đã hoàn thành</p></template>
+                                <template v-if="manga.tlstatus === 'Tạm ngưng'"><p class="fw-bold tl-status status-pause">Tạm ngưng</p></template>
                             </div>
                         </div>
 
@@ -97,22 +99,6 @@
         </section>
     </div>
 </template>
-<script>
-
-    export default {
-        mounted() {
-            const tlstatus = this.$el.querySelector(".tl-status").innerHTML;
-
-            if (tlstatus === "Đã hoàn thành") {
-            this.$el.querySelector(".tl-status").classList.add("status-done");
-            } else if (tlstatus === "Đang tiến hành") {
-            this.$el.querySelector(".tl-status").classList.add("status-on");
-            } else if (tlstatus === "Tạm ngưng") {
-            this.$el.querySelector(".tl-status").classList.add("status-pause");
-            }
-        },
-    }          
-</script>
 <script setup>
     const route = useRoute();
     const { data: manga } = await useFetch('https://api.npoint.io/5db90e7f047a1396a59c/manga/' + route.params.manga_id);
